@@ -1,19 +1,165 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:700,900,600,800");
+
 * {
   box-sizing: border-box;
   margin: 0;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  padding: 16px;
+  margin-top: 30px;
+  height: 800px; /* Used in this example to enable scrolling was 1500px */
 }
 
 /* Navigation */
 
 .nav-container {
-  overflow: hidden;
-  background-color: #333;
-  background: #FFFFFF;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
+  top: 0;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  overflow: auto;
+  z-index:1; 
+  border-bottom: 10px solid #CCFF15;
+}
+
+.nav-container a {
+  float: left;
+  padding: 15px;
+  color: black;
+  text-decoration: none;
+  width: 25%; /* Four links of equal widths */
+
+  /* font style of navigation items*/
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+}
+
+
+/* Header */
+
+.header-container{
+  background: white;
+}
+
+.other{
+  position: absolute;
+  width: 424px;
+  height: 287px;
+  left: 84px;
+  top: 261px;
+}
+
+.name-pronouns{
+  position: absolute;
+  width: 423px;
+  height: 91px;
+  left: 1px;
+  top: 0px;
+}
+
+.bio {
+  position: absolute;
+  width: 413px;
+  height: 125px;
+  left: 0px;
+  top: 137px;
+}
+
+.icons{
+  position: absolute;
+  width: 62.5px;
+  height: 466px;
+  left: 689px;
+  top: 159px;
+}
+
+.icons li{
+  list-style: none;
+}
+
+.email{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 6px;
+  top: 0px;
+}
+
+.linkedin {
+  position: absolute;
+  width: 62.5px;
+  height: 50px;
+  left: 0px;
+  top: 208px;
+}
+
+.github {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 6px;
+  top: 416px;
+}
+
+.EllipseG {
+  position: absolute;
+  width: 330px;
+  height: 330px;
+  left: 969px;
+  top: 233px;
+  z-index: -1;
+  border-radius: 50%;
+
+  background: rgba(204, 255, 21, 0.85);
+}
+
+.main-pic {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: 984px;
+  top: 248px;
+  z-index: 1;
+}
+
+
+
+
+/* font styles */
+
+
+h1 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 38px;
+  line-height: 46px;
+  text-align: center;
+  color: #000000;
+}
+
+h3 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 38px;
+  line-height: 46px;
+  text-align: center;
+  color: #000000;
+}
+
+p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: lowercase;
+  color: #000000;
 }
